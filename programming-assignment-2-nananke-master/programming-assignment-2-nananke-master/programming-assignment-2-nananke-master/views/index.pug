@@ -1,0 +1,133 @@
+extends layout
+
+block content
+  
+      
+        h4.display-4.m-b-2 enter you information here, and then click crearte button
+        br
+        <input type="text" id="post_id" value=" " /> post_id
+        br
+        <input type="text" id="title" value=" " /> title
+        br
+        <input type="text" id="body" value=" " /> body
+        br
+        <input type="text" id="author" value=" " /> author
+        br
+        .ui.blue.button#create|   Create Post
+        br
+        br
+        br
+        h4.display-4.m-b-2 click read button, then you can see all the information in database(console.log)
+        .ui.blue.button#read
+           |   Read Post
+        br
+        br
+        br
+        h4.display-4.m-b-2 enter the post_id you want to search
+        <input type="text" id="search_pid" value=" " /> search_post_id
+        br
+        .ui.blue.button#search
+           |   Search Post
+
+        br
+        br
+        h4.display-4.m-b-2 enter the post_id you want to search and update
+        <input type="text" id="put_search_pid" value=" " /> update_search_pid
+         br
+        <br>if exist, update it, if not exist, create a new one 
+        br
+        <input type="text" id="put_post_id" value=" " /> put_post_id
+        br
+        <input type="text" id="put_title" value=" " /> put_title
+        br
+        <input type="text" id="put_body" value=" " /> put_body
+        br
+        <input type="text" id="put_author" value=" " /> put_author
+        br
+        .ui.orange.button#update
+           |   Update Post
+        br
+        br
+        h4.display-4.m-b-2delete delete post according to the post_id you enter
+        <input type="text" id="delete_search_pid" value=" " /> delete_search_pid
+        br
+        .ui.red.button#destroy
+           |   Destroy Post
+        br
+        br
+        br
+        br
+        <br>
+        br
+        <input type="text" id="post_comment_search_pid" value=" " /> enter post_id
+        br
+        <input type="text" id="post_comment" value=" " /> post comment
+        br
+        .ui.orange.button#create_comment
+           |   Create Comment
+
+        br
+        br
+        br
+        br
+        h4.display-4.m-b-2delete getting all comments according to the post_id you enter
+        <input type="text" id="get_all_comment_search_pid" value=" " /> enter post_id
+        br
+        br
+        .ui.orange.button#get_all_comment
+           |   Get all_Comment
+
+        br
+        br
+        br
+        h4.display-4.m-b-2delete get a certain comment according to the post_id and comment_id you enter
+        <input type="text" id="get_comment_search_pid" value=" " /> enter post_id
+        br
+        <input type="text" id="get_comment_search_cid" value=" " /> enter comment_id
+        br
+        br
+        .ui.black.button#get_comment
+           |   Get a_Comment
+
+        br
+        br
+        br
+        h4.display-4.m-b-2delete update a certain comment according to the post_id and comment_id you enter
+        <input type="text" id="update_comment_search_pid" value=" " /> enter post_id
+        br
+        <input type="text" id="update_comment_search_cid" value=" " /> enter comment_id
+        br
+        br
+        .ui.red.button#update_comment
+           |   update a_Comment
+        br
+        br
+        br
+        h4.display-4.m-b-2delete delete a certain comment according to the post_id and comment_id you enter
+        <input type="text" id="delete_comment_search_pid" value=" " /> enter post_id
+        br
+        <input type="text" id="delete_comment_search_cid" value=" " /> enter comment_id
+        br
+        br
+        .ui.red.button#delete_comment
+           |   delete a_Comment
+
+        br
+        br
+        br
+        h4.display-4.m-b-2delete search post
+        <input type="text" id="search_query_button" value=" " /> enter query
+        br
+        br
+        .ui.red.button#search_query
+           |   search query_p
+        br
+        br
+        br
+        h4.display-4.m-b-2delete search comment
+        <input type="text" id="search_query_button" value=" " /> enter query
+        br
+        br
+        .ui.red.button#search_query_comment
+           |   search query_c
+        br
