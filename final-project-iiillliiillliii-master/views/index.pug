@@ -1,0 +1,77 @@
+extends layout
+
+block content
+  <div id ="search_table">
+  <input class="un_1 " type="text" align="center" id = "search_bar" value="search">
+  <button id = "bar_btn">search</button>
+  </div>
+  <p class="title" align = "center" id = "lobby_title" >Welcome to Lobby</p> 
+  br 
+  <p class="title" align = "center" id = "show_title">Welcome to Wegame</p>
+  <p class="title" align = "center" id = "main_pg">Main Lobby Page:</p>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Sign in</title>
+  
+ 
+  <div class="main" id = "table_1">
+  <p class="sign" align="center" id = "text_0">Sign in</p>
+  <form class="form1" onSubmit="return false;">
+  <input class="un " type="text" align="center" id = "sg_in_us" value="Username">
+  <input class="un " type="password" align="center" id = "sg_in_ps" value="Password">
+  
+  <a class="submit" align="center" id = "sin_btn">Sign in</a>
+  br
+  <p class="forgot" align="center" id = "new_u"><a href="#">New User?</p>
+  <input class="un " type="text" align="center" id = "discp" value="Profile">    
+  <a class="submit" align="center" id = "sup_btn">Sign Up</a>        
+  </div>
+
+  <div class = "lobby_page" id = "lobby_table">
+  <p class="title_lobby" align = "center" id = "show_title">Hi, here is the lobby list<button class="submit_1" align = "center" type="button" id = "create_lobby">Create a new lobby</button></p> 
+  br
+  br
+  <nav>
+            <ul>
+                //- <input class="lobby_title" type="button" align = "center"  id = "first_lobby_button">
+                //- <input class="lobby_title" align = "center" type="text" id="member" name="member" value=""><br />
+                <div id="container" />
+            </ul>
+  </nav>
+
+  </div>
+
+
+ 
+
+  <div class = "lobby_info" id = "Lobby_Info">
+  br
+  br
+  <input class="un_new" type="text" align="center" id = "lobby_disc" value="enter discrption"> 
+  <input class="un " type="text" align="center" id = "lobby_game" value="enter game">
+  <input class="un " type="text" align="center" id = "lobby_name"  value="enter lobby_name">
+  <a class="submit" align="center" id = "crea_lob">submit</a>  
+  </div>
+
+  <div class = "table_3" id = "table_3">
+  <p class="back_mainlobby_btn_1" align="left">Lobby information </p>
+  <p class="inner_a_lobby" align = "left">lobby_name: <input class="un " type="text" align="center" id = "lobby_page_name" value="lobby_name"></p>
+  <p class="inner_a_lobby" align = "left">game name:  <input class="un " type="text" align="center" id = "lobby_page_game"  value="game"></p>
+  <p class="inner_a_lobby" align = "left">owner name:  <input class="un " type="text" align="center" id = "lobby_page_owner"  value="lobby_page_owner"></p>
+  <p class="inner_a_lobby" align = "left">decsription:  <input class="un " type="text" align="center" id = "lobby_page_dis"  value="lobby_description"></p>
+  <p class="inner_a_lobby" align = "left">Current player:  <nav><ul align = "center"> <div id="current_player" /></ul></nav></p>
+  <div class = "back_mainlobby_btn" align="right"><a class="submit" id = "back_main_lobby">back</a></div>   
+  </div>
+
+  <div class = "ban_table" id = "ban_table">
+  <p class = "inner_a_lobby" align = "center">Do you want to ban player:</p>
+  <input class="un_new_new" type="text" align="center" id = "play_name" value="playname"> 
+  <a class="submit" align="center" id = "ban_player_yes">yes</a>  
+  br
+  br
+  br
+  br
+  <a class="submit" align="center" id = "ban_player_no">no</a>  
+  </div>
